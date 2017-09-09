@@ -4,7 +4,7 @@ Thermostat application with Nucleo boards..
 
 Used componenets
 
-- Nucleo L476RG (can be changed)
+- Nucleo L476RG (optional, model can changed)
 - DHT11
 - I2C LCD
 - Potantiometer
