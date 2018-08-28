@@ -6,8 +6,8 @@ MQTTClient client;
 Chart myChart;
 Knob myKnobA;
 
-String username = "my-key-2";
-String password = "5db645c0e24f8b38";
+String username = "YOUR-MQTT-ID";
+String password = "YOUR-MQTT-PASSWORD";
 
 Textlabel myTextlabelA;
 Textlabel myTextlabelB;

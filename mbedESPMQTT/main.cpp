@@ -127,9 +127,9 @@ int main(int argc, char* argv[])
 
     MQTTPacket_connectData data = MQTTPacket_connectData_initializer;
     data.MQTTVersion = 3;
-    data.clientID.cstring = "mbed";									//our mqtt client ID
-    data.username.cstring = "my-key-2";							//our shiftr.io connection ID
-    data.password.cstring = "5db645c0e24f8b38";			//our shiftr.io password
+    data.clientID.cstring = "mbed";									//your mqtt client ID
+    data.username.cstring = "YOUR-ID";							//your shiftr.io connection ID
+    data.password.cstring = "YOUR_PASSWORD";			     //your shiftr.io password
 		
     if ((rc = client.connect(data)) != 0)
         pc.printf("rc from MQTT connect is %d\r\n", rc);

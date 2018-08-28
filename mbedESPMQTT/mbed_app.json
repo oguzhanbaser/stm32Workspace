@@ -17,13 +17,13 @@
             "value": "PE_7"
         },
         "esp8266-ssid": {
-            "value": "\"TTNET_AirTies_Air5650_4AY8\""
+            "value": "\"YOUR_WIFI_SSID\""
         },
         "esp8266-password": {
-            "value": "\"YF6bfaK2p6\""
+            "value": "\"YOUR_WIFI_PASSWORD\""
         },
         "esp8266-debug": {
-            "value": false
+            "value": false                  //make true if you want to see all comminucation between esp8266 and stm32
         }
     },
     "target_overrides": {
