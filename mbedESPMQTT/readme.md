@@ -12,6 +12,6 @@ mqttgui       ==> Includes processing software which creates control GUI
 
 ### Processing gui for control RGB and normal leds and show potantiometer value in graph
 
-<img src="imgs/gui.png" width="200">
+<img src="imgs/gui.PNG" width="200">
 
 In this link you can reach all information about with this project from [this link](http://www.elektrobot.net/stm32-ile-esp8266-kullanarak-mqtt-client-mbed/)
