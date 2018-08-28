@@ -14,4 +14,4 @@ In this project we used Mbed OS to develop STM32 software. Mbed makes easy to co
 
 <img src="imgs/gui.PNG" width="200">
 
-In this link you can reach all information about with this project from [this link](http://www.elektrobot.net/stm32-ile-esp8266-kullanarak-mqtt-client-mbed/)
+You can reach all information about with this project from [this link](http://www.elektrobot.net/stm32-ile-esp8266-kullanarak-mqtt-client-mbed/)
