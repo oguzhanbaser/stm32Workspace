@@ -1,0 +1,49 @@
+{
+    "config": {
+        "network-interface":{
+            "help": "options are ETHERNET, WIFI_ESP8266, WIFI_ODIN, WIFI_RTW, MESH_LOWPAN_ND, MESH_THREAD, CELLULAR_ONBOARD",
+            "value": "WIFI_ESP8266"
+        },
+        "mesh_radio_type": {
+            "help": "options are ATMEL, MCR20",
+            "value": "ATMEL"
+        },
+        "esp8266-tx": {
+            "help": "Pin used as TX (connects to ESP8266 RX)",
+            "value": "PE_8"
+        },
+        "esp8266-rx": {
+            "help": "Pin used as RX (connects to ESP8266 TX)",
+            "value": "PE_7"
+        },
+        "esp8266-ssid": {
+            "value": "\"TTNET_AirTies_Air5650_4AY8\""
+        },
+        "esp8266-password": {
+            "value": "\"YF6bfaK2p6\""
+        },
+        "esp8266-debug": {
+            "value": false
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "target.features_add": ["NANOSTACK", "LOWPAN_ROUTER", "COMMON_PAL"],
+            "mbed-mesh-api.6lowpan-nd-channel-page": 0,
+            "mbed-mesh-api.6lowpan-nd-channel": 12,
+            "mbed-trace.enable": 0
+        },
+        "HEXIWEAR": {
+            "esp8266-tx": "PTD3",
+            "esp8266-rx": "PTD2"
+        },
+        "NUCLEO_F401RE": {
+            "esp8266-tx": "D8",
+            "esp8266-rx": "D2"
+        },
+        "NUCLEO_F411RE": {
+            "esp8266-tx": "D8",
+            "esp8266-rx": "D2"
+        }
+    }
+}
