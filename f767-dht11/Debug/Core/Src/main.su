@@ -1,0 +1,9 @@
+main.c:90:6:mDelay	24	static
+main.c:100:6:set_gpio_mode	40	static
+main.c:123:9:readDHT11	88	static
+main.c:214:5:main	24	static
+main.c:276:6:SystemClock_Config	232	static
+main.c:335:13:MX_TIM6_Init	24	static
+main.c:373:13:MX_USART3_UART_Init	8	static
+main.c:408:13:MX_GPIO_Init	56	static
+main.c:508:6:Error_Handler	4	static

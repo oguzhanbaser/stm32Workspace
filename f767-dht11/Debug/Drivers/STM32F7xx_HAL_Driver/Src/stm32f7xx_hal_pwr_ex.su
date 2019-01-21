@@ -1,0 +1,13 @@
+stm32f7xx_hal_pwr_ex.c:151:19:HAL_PWREx_EnableBkUpReg	16	static
+stm32f7xx_hal_pwr_ex.c:180:19:HAL_PWREx_DisableBkUpReg	16	static
+stm32f7xx_hal_pwr_ex.c:209:6:HAL_PWREx_EnableFlashPowerDown	4	static
+stm32f7xx_hal_pwr_ex.c:219:6:HAL_PWREx_DisableFlashPowerDown	4	static
+stm32f7xx_hal_pwr_ex.c:229:6:HAL_PWREx_EnableMainRegulatorLowVoltage	4	static
+stm32f7xx_hal_pwr_ex.c:239:6:HAL_PWREx_DisableMainRegulatorLowVoltage	4	static
+stm32f7xx_hal_pwr_ex.c:249:6:HAL_PWREx_EnableLowRegulatorLowVoltage	4	static
+stm32f7xx_hal_pwr_ex.c:259:6:HAL_PWREx_DisableLowRegulatorLowVoltage	4	static
+stm32f7xx_hal_pwr_ex.c:275:19:HAL_PWREx_EnableOverDrive	16	static
+stm32f7xx_hal_pwr_ex.c:321:19:HAL_PWREx_DisableOverDrive	16	static
+stm32f7xx_hal_pwr_ex.c:395:19:HAL_PWREx_EnterUnderDriveSTOPMode	32	static
+stm32f7xx_hal_pwr_ex.c:461:10:HAL_PWREx_GetVoltageRange	4	static
+stm32f7xx_hal_pwr_ex.c:493:19:HAL_PWREx_ControlVoltageScaling	32	static
