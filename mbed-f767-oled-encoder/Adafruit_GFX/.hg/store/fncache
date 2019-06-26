@@ -1,0 +1,6 @@
+data/Adafruit_SSD1306.cpp.i
+data/Adafruit_SSD1306.h.i
+data/Adafruit_GFX_Config.h.i
+data/Adafruit_GFX.h.i
+data/Adafruit_GFX.cpp.i
+data/glcdfont.h.i
