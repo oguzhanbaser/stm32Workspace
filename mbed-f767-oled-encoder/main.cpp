@@ -8,20 +8,21 @@
 #include "Adafruit_SSD1306.h"
 #include "DHT.h"
 
+// Used pins
+
+// OLED Pins
 #define I2C_SCL PB_8
 #define I2C_SDA PB_9
 
-
+// Led ve pot pins
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
 DigitalOut led3(LED3);
 AnalogIn pot(A0);
-Serial pc(USBTX, USBRX);
 
-Timer t1;
+Timer t1;     // timer
 
-DHT sensor(PF_14, DHT11);
-bool isRotateCw = false;
+DHT sensor(PF_14, DHT11);   // Used class 
 
 I2C i2c(I2C_SDA, I2C_SCL);
 Adafruit_SSD1306_I2c display(i2c, NC);
@@ -86,8 +87,6 @@ int main()
         }
         display.display();                  // show screen
 
-        
-        // pc.printf("Encoder Count: %d, DHT temp: %d, DHT hum: %d\n\r", pulseCount, temp, hum);
         wait_ms(30);
     }
 }
