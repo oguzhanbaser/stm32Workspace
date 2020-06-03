@@ -4,4 +4,4 @@
 
 ### Connection diagram of this project exist in below
 
-<img src="fritzing/f103_tcp_server_1.png" width="600px">
+<img src="fritzing/f103_tcp_server_2.png" width="600px">
