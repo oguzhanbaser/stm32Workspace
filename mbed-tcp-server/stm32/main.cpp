@@ -17,23 +17,19 @@
 #define PORT    61
 
 const uint8_t   MAC[6] = { 0x00, 0x01, 0x02, 0x03, 0x04, 0x05 };
-UipEthernet     net(MAC, D11, D12, D13, D10);   // mac, mosi, miso, sck, cs
+UipEthernet     net(MAC,PB_5, PB_4, PB_3, PA_15);   // mac, mosi, miso, sck, cs
 TcpServer       server;                         // Ethernet server
 TcpClient*      client;
 uint8_t         recvData[1024];
-// const char      sendData[] = "Data received OK";
 const char      sendData[] = {0xA5, 0x5A, 0x40, 'O', 'K'};
 char            adcArr[] = {0xA5, 0x5A, 0x30, 0x00, 0x00};
 
-// Blinking rate in milliseconds
-#define BLINKING_RATE_MS                                                    500
-
-DigitalOut led1(LED1);
-DigitalOut led2(LED2);
-// DigitalOut led3(LED3);
-PwmOut led3(LED3);
-AnalogIn pot1(A1), pot2(A2);
-Serial pc(USBTX, USBRX);
+DigitalOut led1(PB_12);
+DigitalOut led2(PB_13);
+DigitalOut led4(PC_13);                     // internal LED
+PwmOut led3(PB_1);
+AnalogIn pot1(PA_0), pot2(PA_1);
+Serial pc(PA_2, PA_3);
 
 Timer t1;
 
@@ -66,8 +62,8 @@ int main()
     while (true) {
         client = server.accept();               // accept client if exist
 
-        uint8_t adcVal = (uint8_t)(pot1.read() * 255);
-        uint8_t adcVal2 = (uint8_t)(pot2.read() * 255);
+        uint8_t adcVal = (uint8_t)(pot1.read() * 100);
+        uint8_t adcVal2 = (uint8_t)(pot2.read() * 100);
         adcArr[3] = adcVal;
         adcArr[4] = adcVal2;
  
@@ -118,7 +114,7 @@ int main()
 
         if(t1.read_ms() > 1000)
         {
-            //led3 = !led3;
+            led4 = !led4;
             t1.reset();
         }
 
