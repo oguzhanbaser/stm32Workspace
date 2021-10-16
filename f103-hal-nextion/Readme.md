@@ -4,7 +4,7 @@
 
 ### Connection diagram and Nextion screen design is given below.
 
-### You can access full detailed description of example from this link
+### You can access full detailed description of example from [this link](http://www.elektrobot.net/stm32-hal-kutuphaneleri-ile-nextion-ekran-kullanimi/)
 
 ![Connection Diagram](/images/f103_conn_bb3.png)
 
