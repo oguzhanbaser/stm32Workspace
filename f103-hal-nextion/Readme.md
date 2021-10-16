@@ -6,6 +6,6 @@
 
 ### You can access full detailed description of example from [this link](http://www.elektrobot.net/stm32-hal-kutuphaneleri-ile-nextion-ekran-kullanimi/)
 
-![Connection Diagram](/images/f103_conn_bb3.png)
+![Connection Diagram](images/f103_conn_bb3.png)
 
-![Nextion Design](/images/nex_design.png)
+![Nextion Design](images/nex_design.png)

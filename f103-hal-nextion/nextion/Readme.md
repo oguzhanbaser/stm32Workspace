@@ -1,2 +1,2 @@
 
-![Nextion Design](/images/nex_design.png)
+![Nextion Design](../images/nex_design.png)
